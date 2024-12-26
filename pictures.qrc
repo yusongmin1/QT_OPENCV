@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>start.jpg</file>
+        <file>images/DSC07807.jpg</file>
+        <file>images/DSC07809.jpg</file>
+        <file>images/DSC08077.jpg</file>
+        <file>images/DSC08079.jpg</file>
+        <file>images/DSC08080.jpg</file>
+        <file>images/DSC08085.jpg</file>
+        <file>images/DSC08087.jpg</file>
+        <file>images/DSC08088.jpg</file>
+        <file>images/DSC08089.jpg</file>
+        <file>images/DSC08091.jpg</file>
+        <file>images/DSC08092.jpg</file>
+        <file>images/DSC08094.jpg</file>
+        <file>images/DSC08095.jpg</file>
+        <file>images/DSC08097.jpg</file>
+        <file>images/DSC08115.jpg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1100</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>90</width>
+      <height>520</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>90</width>
+      <height>520</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <widget class="QPushButton" name="start">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>70</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>开始</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="image_raw">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>80</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>70</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>原始图片</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="image_result">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>70</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>结果图片</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="image_trans">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>70</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>图片变换</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="image_filter">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>70</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>图片滤波</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="noise">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>360</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>70</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>8</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>原图加噪声</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save_result">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>430</y>
+       <width>70</width>
+       <height>70</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>70</width>
+       <height>70</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>另存结果</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>20</y>
+      <width>750</width>
+      <height>520</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>750</width>
+      <height>520</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="START">
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>840</width>
+        <height>520</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/new/prefix1/start.jpg);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="IMAGE_RAW">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>840</width>
+        <height>520</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="IMAGE_RESULT">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>840</width>
+        <height>520</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>20</y>
+      <width>180</width>
+      <height>520</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>180</width>
+      <height>520</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>5</number>
+    </property>
+    <widget class="QStackedWidget" name="stackedWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>155</width>
+       <height>500</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>155</width>
+       <height>500</height>
+      </size>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <widget class="QToolBox" name="toolBox">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>155</width>
+         <height>500</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>7</number>
+       </property>
+       <widget class="QWidget" name="RGB2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>155</width>
+          <height>292</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>转换为其他格式</string>
+        </attribute>
+        <widget class="QRadioButton" name="gray">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>RGB2GRAY</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="hsv">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>RGB2HSV</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="MIRROR">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>155</width>
+          <height>292</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>镜像</string>
+        </attribute>
+        <widget class="QRadioButton" name="horizon">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>141</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Horizontal</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="vertical">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vertical</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="ROTATE">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>155</width>
+          <height>292</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>旋转</string>
+        </attribute>
+        <widget class="QSlider" name="rotate_slider">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>160</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Segmentation">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>155</width>
+          <height>292</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>阈值分割</string>
+        </attribute>
+        <widget class="QRadioButton" name="default_segmentation">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>默认</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="dajin">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>大津</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="color_segmentation">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>彩色阈值分割</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Reverse">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>155</width>
+          <height>292</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>反向</string>
+        </attribute>
+        <widget class="QRadioButton" name="reverse_2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>彩色图</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="reverse_gray">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>50</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>灰度图</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Erosion">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>155</width>
+          <height>292</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>腐蚀膨胀</string>
+        </attribute>
+        <widget class="QRadioButton" name="Erosion_2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>腐蚀</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="Dilation_2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>50</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>膨胀</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="open">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>80</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>开运算</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="close">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>110</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>闭运算</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Histogram">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>155</width>
+          <height>292</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>直方图均衡</string>
+        </attribute>
+        <widget class="QRadioButton" name="histograam">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>灰度</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="hist_color">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>50</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>彩色</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="biggerandsmaller">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>155</width>
+          <height>292</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>图片缩放</string>
+        </attribute>
+        <widget class="QSlider" name="horizontalSlider">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>131</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="QToolBox" name="toolBox_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>155</width>
+         <height>500</height>
+        </rect>
+       </property>
+       <property name="currentIndex">
+        <number>5</number>
+       </property>
+       <widget class="QWidget" name="mean">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>155</width>
+          <height>344</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>均值滤波</string>
+        </attribute>
+        <widget class="QRadioButton" name="mean_3">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>卷积核3</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="mean_5">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>50</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>卷积核5</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="mean_7">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>80</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>卷积核7</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="medium">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>155</width>
+          <height>344</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>中值滤波</string>
+        </attribute>
+        <widget class="QRadioButton" name="mean_9">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>卷积核3</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="mean_10">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>50</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>卷积核5</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="mean_11">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>80</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>卷积核7</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Gaussian">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>155</width>
+          <height>344</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>高斯滤波</string>
+        </attribute>
+        <widget class="QRadioButton" name="mean_12">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>卷积核3</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="mean_13">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>50</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>卷积核5</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="sobel">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>155</width>
+          <height>344</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>Sobel滤波</string>
+        </attribute>
+        <widget class="QRadioButton" name="mean_15">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>X方向(竖直)</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="mean_16">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>50</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Y方向(水平)</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="abs">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>80</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>绝对值</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="laplace">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>155</width>
+          <height>344</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>Laplace滤波</string>
+        </attribute>
+        <widget class="QRadioButton" name="mean_18">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Laplace</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="reduce_laplace">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>115</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>锐化</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>80</y>
+           <width>151</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Laplace边缘检测</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="canny">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>155</width>
+          <height>344</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>Canny边缘检测</string>
+        </attribute>
+        <widget class="QRadioButton" name="radioButton_2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>115</width>
+           <height>19</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Canny</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="action_O"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>内置图片</string>
+    </property>
+    <addaction name="action1"/>
+    <addaction name="action2"/>
+    <addaction name="action3"/>
+    <addaction name="action4"/>
+    <addaction name="action5"/>
+    <addaction name="action6"/>
+    <addaction name="action7"/>
+    <addaction name="action8"/>
+    <addaction name="action9"/>
+    <addaction name="action10"/>
+    <addaction name="actionstart"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_O">
+   <property name="icon">
+    <iconset>
+     <normaloff>../MYOPENCVSOFTWARE/tubiao/folder-close.png</normaloff>../MYOPENCVSOFTWARE/tubiao/folder-close.png</iconset>
+   </property>
+   <property name="text">
+    <string>打开(&amp;O)</string>
+   </property>
+  </action>
+  <action name="action_N">
+   <property name="icon">
+    <iconset>
+     <normaloff>../MYOPENCVSOFTWARE/tubiao/add-bold.png</normaloff>../MYOPENCVSOFTWARE/tubiao/add-bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建(&amp;N)</string>
+   </property>
+  </action>
+  <action name="action_S">
+   <property name="icon">
+    <iconset>
+     <normaloff>../MYOPENCVSOFTWARE/tubiao/save.png</normaloff>../MYOPENCVSOFTWARE/tubiao/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>保存(&amp;Ctrl+S)</string>
+   </property>
+  </action>
+  <action name="action_shift_s">
+   <property name="text">
+    <string>另存为(&amp;Shift+S)</string>
+   </property>
+  </action>
+  <action name="action1">
+   <property name="text">
+    <string>1</string>
+   </property>
+  </action>
+  <action name="action2">
+   <property name="text">
+    <string>2</string>
+   </property>
+  </action>
+  <action name="action3">
+   <property name="text">
+    <string>3</string>
+   </property>
+  </action>
+  <action name="action4">
+   <property name="text">
+    <string>4</string>
+   </property>
+  </action>
+  <action name="action5">
+   <property name="text">
+    <string>5</string>
+   </property>
+  </action>
+  <action name="action6">
+   <property name="text">
+    <string>6</string>
+   </property>
+  </action>
+  <action name="action7">
+   <property name="text">
+    <string>7</string>
+   </property>
+  </action>
+  <action name="action8">
+   <property name="text">
+    <string>8</string>
+   </property>
+  </action>
+  <action name="action9">
+   <property name="text">
+    <string>9</string>
+   </property>
+  </action>
+  <action name="action10">
+   <property name="text">
+    <string>10</string>
+   </property>
+  </action>
+  <action name="actionstart">
+   <property name="text">
+    <string>start</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
